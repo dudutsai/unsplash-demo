@@ -1,0 +1,2 @@
+export const APP_ACCESS_KEY = "64222a2c6a1fc8b3e035b93b7be4d77645b2536948b251582143baf4f1f122ce";
+export const APP_SECRET = "ff03a1db99d77f0c7c26754f75011df6ca3e50c82de962a115ce4668efceaea9";
