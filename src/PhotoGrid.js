@@ -4,21 +4,16 @@ import PhotoCard from './PhotoCard';
 export default class PhotoGrid extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      photoList: this.props.photoList
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({photoList: this.props.photoList});
   }
 
   render() {
     return (
       <div>
-        {this.state.photoList !== undefined && this.state.photoList.length > 0 ? this.state.photoList.map(photo => {
+        {this.props.photoList !== undefined && this.props.photoList.length > 0 ? this.props.photoList.map(photo => {
           return (
             <PhotoCard
+              key={photo.id}
+              description={photo.description}
               photo={photo.photo}
               photoUrl={photo.photoUrl}
               user={photo.user}
